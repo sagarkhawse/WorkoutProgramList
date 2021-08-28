@@ -2,6 +2,7 @@ package com.laboontech.kotlinworkoutlist.ui.workoutlist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.laboontech.kotlinworkoutlist.R
