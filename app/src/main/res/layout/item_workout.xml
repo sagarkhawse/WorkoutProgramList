@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
-    app:cardElevation="5sp"
+    app:cardElevation="0sp"
     app:cardCornerRadius="10dp"
     app:cardBackgroundColor="@color/accent">
 
@@ -29,8 +28,9 @@
 
         <TextView
             android:id="@+id/tvSets"
-            android:layout_width="6dp"
-            android:layout_height="17dp"
+            android:padding="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_semibold"
@@ -41,6 +41,11 @@
 
         <ImageView
             android:id="@+id/add"
+            app:tint="@color/white"
+            android:backgroundTint="@color/black"
+            android:padding="5sp"
+            android:background="@drawable/bg_circle"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -48,14 +53,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvWorkoutName"
             app:srcCompat="@drawable/ic_add"
-            app:tint="@color/black" />
+/>
 
         <ImageView
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_curve_rectangle"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,6 +70,11 @@
 
         <ImageView
             android:id="@+id/minus"
+            app:tint="@color/white"
+            android:backgroundTint="@color/black"
+            android:padding="5sp"
+            android:background="@drawable/bg_circle"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -73,7 +82,7 @@
             app:layout_constraintStart_toEndOf="@+id/tvSets"
             app:layout_constraintTop_toBottomOf="@+id/tvWorkoutName"
             app:srcCompat="@drawable/ic_minus"
-            app:tint="@color/black" />
+   />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

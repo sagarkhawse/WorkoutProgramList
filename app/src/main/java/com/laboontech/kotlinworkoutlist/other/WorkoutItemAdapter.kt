@@ -24,7 +24,7 @@ class WorkoutItemAdapter(var items: List<WorkoutItem>, private val viewModel: Wo
     override fun onBindViewHolder(holder: WorkoutViewHolder, position: Int) {
         val data = items[position]
         holder.itemView.tvWorkoutName.text=data.name
-        holder.itemView.tvSets.text="Sets : ${data.name}"
+        holder.itemView.tvSets.text="Sets : ${data.sets}"
 
         holder.itemView.delete.setOnClickListener {
             viewModel.delete(data)

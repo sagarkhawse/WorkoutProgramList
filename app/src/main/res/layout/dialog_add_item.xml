@@ -2,73 +2,72 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="380dp"
     android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:layout_margin="10dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:layout_margin="10dp">
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_a_workout_item"
-        android:textSize="18sp"
-        android:textColor="@color/purple_700"
         android:fontFamily="@font/poppins_bold"
-        />
+        android:text="@string/add_a_workout_item"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="@string/enter_workout_name"
-        >
+        android:hint="@string/enter_workout_name">
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWorkoutName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etWorkoutName"
-            android:inputType="text"
             android:fontFamily="@font/poppins_medium"
-            />
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="@string/enter_workout_name"
-        >
+        android:hint="@string/enter_number_of_sets">
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSets"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etSets"
-            android:inputType="number"
             android:fontFamily="@font/poppins_medium"
-            />
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_curve_rectangle"
-        android:text="@string/add"
-        android:fontFamily="@font/poppins_bold"
-        android:textSize="16sp"
-        android:id="@+id/add"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="15dp"
-        />
+        android:background="@drawable/bg_curve_rectangle"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/add"
+        android:textSize="16sp" />
 
     <TextView
+        android:id="@+id/cancel"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppins"
-        android:id="@+id/cancel"/>
+        android:text="@string/cancel"
+        android:textColor="@color/black" />
 
 </LinearLayout>

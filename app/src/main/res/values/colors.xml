@@ -3,10 +3,10 @@
     <color name="purple_200">#FA1100</color>
     <color name="purple_500">#FA1100</color>
     <color name="purple_700">#FA1100</color>
-    <color name="teal_200">#FF9800</color>
-    <color name="teal_700">#FF9800</color>
+    <color name="teal_200">#E8DCDB</color>
+    <color name="teal_700">#E6D9D8</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="accent">#FFFBFB</color>
+    <color name="accent">#EFDEDE</color>
 
 </resources>
