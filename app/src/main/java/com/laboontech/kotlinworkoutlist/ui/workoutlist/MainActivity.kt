@@ -2,17 +2,16 @@ package com.laboontech.kotlinworkoutlist.ui.workoutlist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.laboontech.kotlinworkoutlist.R
-import com.laboontech.kotlinworkoutlist.data.db.WorkoutDatabase
 import com.laboontech.kotlinworkoutlist.data.db.entities.WorkoutItem
-import com.laboontech.kotlinworkoutlist.data.repositories.WorkoutRepository
-import com.laboontech.kotlinworkoutlist.other.WorkoutItemAdapter
+import com.laboontech.kotlinworkoutlist.adapters.WorkoutItemAdapter
+import com.laboontech.kotlinworkoutlist.ui.interfaces.AddItemDialogListener
+import com.laboontech.kotlinworkoutlist.ui.viewmodel.WorkoutViewModel
+import com.laboontech.kotlinworkoutlist.ui.viewmodel.WorkoutViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.InternalCoroutinesApi
-import org.kodein.di.Kodein
 
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity(), KodeinAware {
         })
 
         floatingActionButton.setOnClickListener {
-            AddWorkoutItemDialog(this,object:AddItemDialogListener{
+            AddWorkoutItemDialog(this,object: AddItemDialogListener {
                 override fun onAddClicked(item: WorkoutItem) {
                     viewModel.upsert(item)
                 }

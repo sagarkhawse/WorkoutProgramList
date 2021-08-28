@@ -1,4 +1,4 @@
-package com.laboontech.kotlinworkoutlist.other
+package com.laboontech.kotlinworkoutlist.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.laboontech.kotlinworkoutlist.R
 import com.laboontech.kotlinworkoutlist.data.db.entities.WorkoutItem
-import com.laboontech.kotlinworkoutlist.ui.workoutlist.WorkoutViewModel
+import com.laboontech.kotlinworkoutlist.ui.viewmodel.WorkoutViewModel
 import kotlinx.android.synthetic.main.item_workout.view.*
 
 class WorkoutItemAdapter(var items: List<WorkoutItem>, private val viewModel: WorkoutViewModel) :

@@ -1,4 +1,4 @@
-package com.laboontech.kotlinworkoutlist.ui.workoutlist
+package com.laboontech.kotlinworkoutlist.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

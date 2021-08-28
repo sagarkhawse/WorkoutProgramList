@@ -3,7 +3,7 @@ package com.laboontech.kotlinworkoutlist
 import android.app.Application
 import com.laboontech.kotlinworkoutlist.data.db.WorkoutDatabase
 import com.laboontech.kotlinworkoutlist.data.repositories.WorkoutRepository
-import com.laboontech.kotlinworkoutlist.ui.workoutlist.WorkoutViewModelFactory
+import com.laboontech.kotlinworkoutlist.ui.viewmodel.WorkoutViewModelFactory
 import kotlinx.coroutines.InternalCoroutinesApi
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware

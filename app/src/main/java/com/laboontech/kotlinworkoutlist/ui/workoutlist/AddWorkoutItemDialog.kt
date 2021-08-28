@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatDialog
 import com.laboontech.kotlinworkoutlist.R
 import com.laboontech.kotlinworkoutlist.data.db.entities.WorkoutItem
+import com.laboontech.kotlinworkoutlist.ui.interfaces.AddItemDialogListener
 import kotlinx.android.synthetic.main.dialog_add_item.*
 
 class AddWorkoutItemDialog(context: Context, var addItemDialogListener: AddItemDialogListener) : AppCompatDialog(context) {
